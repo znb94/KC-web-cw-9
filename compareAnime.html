@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اثنينكم تشوفون Anime 🎎 🏮 🤔</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- السؤال الثالث -->
+    <!-- قم بالتعرف على مجموعة المسلسلات المشتركة بينك وبين صديقك -->
+    <div id="container">
+      <div class="head">Mutual Anime</div>
+    </div>
+    <script>
+      let myAnime = [
+        "Kaiji",
+        "Tokyo Ghoul",
+        "Conan",
+        "Boku No Hero",
+        "Dragon Ball",
+      ];
+      let myFriendAnime = [
+        "Attack on Titan",
+        "Conan",
+        "One Piece",
+        "Dragon Ball",
+      ];
+      let mutualAnime = [];
+      for (let i = 0; i < myAnime.length; i++) {
+        for (let j = 0; j < myFriendAnime.length; j++) {
+          if (myAnime[i] === myFriendAnime[j]) {
+            mutualAnime.push(myAnime[i]);
+          }
+        }
+      }
+      console.log(mutualAnime);
+
+      // 👀 لا ننصح أصحاب القلوب الضعيفة بالنظر إلى الأسفل
+      let ul = document.createElement("ul");
+      ul.className = "myList";
+      document.getElementById("container").appendChild(ul);
+
+      function createList(arr) {
+        mutualAnime.forEach(function (data) {
+          let li = document.createElement("li");
+          ul.appendChild(li);
+          li.innerHTML += data;
+          li.className = "listItem";
+        });
+      }
+
+      // function call
+      createList(mutualAnime);
+    </script>
+  </body>
+</html>
