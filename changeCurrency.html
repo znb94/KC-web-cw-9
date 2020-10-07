@@ -1,83 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>تحويل عملات 💰💰</title>
-  </head>
-  <body>
-    <!-- السؤال الأول -->
-
-    <div>
-      <h2 style="text-align: center; font-size: 1.2rem; margin: 1rem">
-        💵 أدخل المبلغ المطلوب تحويله
-        <br />
-        🛩 واختر علم الدولة التي تود السفر إليها
-        <br />
-      </h2>
-      <div class="center">
-        <input
-          dir="rtl"
-          type="text"
-          placeholder="المبلغ"
-          id="amount"
-          style="text-align: center; font-size: 1rem; margin: 0.4rem"
-        />
-        <select id="country-list">
-          <option value="USA">🇺🇸</option>
-          <option value="England">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-          <option value="UAE">🇦🇪</option>
-          <option value="Turkey">🇹🇷</option>
-        </select>
-      </div>
-      <div class="center">
-        <button onclick="changeCurr();">احسب</button>
-      </div>
-      <div class="center">
-        <h3 id="newAmount">0</h3>
-      </div>
-    </div>
-
-    <!-- أولاً: قم بفتح هذه الصفحة في المتصفح لتأخذ فكرة بسيطة عن التمرين -->
-
-    <!-- script داخل وسم changeCurr() اسمها function ثانياً: قم بإنشاء دالة أو -->
-
-    <!-- ----------------------------------------------------------------- -->
-    <!--  هي دالة تقوم بتحويل قيمة المبلغ من الدينار الكويتي changeCurr()  -->
-    <!--  إلى العملة المستخدمة في الدولة التي تختارها                      -->
-    <!-- ----------------------------------------------------------------- -->
-
-    <script>
-      // عرف الدالة
-      {
-        let amount = document.getElementById("amount").value;
-        let sel = document.getElementById("country-list");
-        let country = sel.value;
-        let newAmount = 0;
-        // country قم باستخدام الجمل الشرطية المناسبة لاختبار قيمة المتغير
-        // USA هي country مثال: إن كانت قيمة
-        // من الدينار الكويتي إلى الدولار الأمريكي amount قم بتحويل المبلغ
-        /*
-          المعادلة     الدولة
-          USA        amount * 3.27
-          England    amount * 2.52
-          UAE        amount * 12.01
-          Turkey     amount * 24.68
-        */
-        if (condition) {
-          // دينار كويتي إلى دولار أمريكي
-          newAmount = amount * 3.27;
-          document.getElementById("newAmount").innerHTML =
-            newAmount + " دولار أمريكي";
-        } else if (condition) {
-          // دينار كويتي إلى باوند بريطاني
-        } else if (condition) {
-          // دينار كويتي إلى درهم إماراتي
-        } else {
-          // دينار كويتي إلى ليرة تركية
-        }
-      }
-    </script>
-  </body>
-</html>
