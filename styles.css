@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body {
+    overflow: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0 0 0;
+    background-color: #939b62;
+    color: #222831;
+}
+@keyframes rotate-left {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes rotate-right {
+    0% {transform: rotate(-0deg);}
+    25% {transform: rotate(-90deg);}
+    50% {transform: rotate(-180deg);}
+    75% {transform: rotate(-270deg);}
+    100% {transform: rotate(-360deg);}
+}
+.rotate, .rotate-column {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+.rotate-column {
+    flex-direction: column;
+}
+.rotate h1:first-child {
+    animation: rotate-left 3s infinite linear;
+}
+.rotate h1:last-child {
+    animation: rotate-right 3s infinite linear;
+}
+.board {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd56b;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 1px #ffb26b;
+}
+table {
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+}
+td {
+    width: 100px;
+    cursor: pointer;
+}
+.v {
+    border-left: 4px solid #ff7b54;
+    border-right: 4px solid #ff7b54;
+}
+.h {
+    border-bottom: 4px solid #ff7b54;
+    border-top: 4px solid #ff7b54;
+}
