@@ -13,7 +13,7 @@
 4. أنشئ مصفوفة orders ولتكن فارغة
 5. داخل دالة addOrder:
     - أنشئ كائن newOrder ليحتوي على الخواص  name, id, phone, order
-    - أضف الكائن newOrder إلى مصفوفة orders باستخدام دالة ()push
+    - أدرج الكائن newOrder إلى مصفوفة orders باستخدام دالة ()push
 6. داخل دالة load:
     - اعرض قيم الكائنات باستخدام forEach بالصيغة التالية:<br>
 ```
