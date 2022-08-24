@@ -17,7 +17,7 @@ function addOrder() {
 
 function load() {
   let container = document.getElementById("container");
-  
+  container.innerHTML = "";
   // طبّق الخطوة 6 تحت هذا الكومنت
 
 }
